@@ -1,0 +1,8 @@
+body {
+    background-color: lightblue;
+}
+
+/* The target of this selector was far too large */
+.heading {
+    width: 16.75vw;
+}
