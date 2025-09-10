@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- Processing instruction -->
+<?xml-stylesheet type="text/css" href="styles/pets.css" ?>
+<!-- 
+    This document contains a list of adopted pets from Pete's Pet Store
+
+    Filename: pets.xml
+    Author: Eric Henderson
+    Date: 9/9/25
+ -->
+<Pets>
+    <Pet PetID="7">
+        <Name>Eugene</Name>
+        <Category>Cat</Category>
+        <Breed>Siamese</Breed>
+        <DateAdopted>01/25/2011</DateAdopted>
+        <Gender>Male</Gender>
+        <Registered>CFA</Registered>
+        <Color>Black</Color>
+        <ListPrice currency="USD">279.54</ListPrice>
+    </Pet>
+    <Pet PetID="8">
+        <Name>Miranda</Name>
+        <Category>Dog</Category>
+        <Breed>Norfolk Terrier</Breed>
+        <DateAdopted>05/04/2011</DateAdopted>
+        <Gender>Female</Gender>
+        <Registered>AKC</Registered>
+        <Color>Red</Color>
+        <ListPrice currency="USD">203.75</ListPrice>
+    </Pet>
+    <Pet PetID="10">
+        <Name>Sherri</Name>
+        <Category>Dog</Category>
+        <Breed>Siberian Huskie</Breed>
+        <DateAdopted>09/13/2011</DateAdopted>
+        <Gender>Female</Gender>
+        <Registered>AKC</Registered>
+        <Color>Black/White</Color>
+        <ListPrice currency="USD">166.79</ListPrice>
+    </Pet>
+    <Pet PetID="11">
+        <Name>Susan</Name>
+        <Category>Dog</Category>
+        <Breed>Dalmation</Breed>
+        <DateAdopted>01/22/2011</DateAdopted>
+        <Gender>Female</Gender>
+        <Registered>AKC</Registered>
+        <Color>Spotted</Color>
+        <ListPrice currency="USD">164.96</ListPrice>
+    </Pet>
+    <Pet PetID="12">
+        <Name>Leisha</Name>
+        <Category>Dog</Category>
+        <Breed>Rottweiler</Breed>
+        <DateAdopted>06/13/2011</DateAdopted>
+        <Gender>Female</Gender>
+        <Registered>AKC</Registered>
+        <Color>Brown</Color>
+        <ListPrice currency="USD">164.06</ListPrice>
+    </Pet>
+    <Pet PetID="13">
+        <Name>Sheena</Name>
+        <Category>Fish</Category>
+        <Breed>Tetra</Breed>
+        <DateAdopted>03/01/2011</DateAdopted>
+        <Gender>Male</Gender>
+        <Color>Red</Color>
+        <ListPrice currency="USD">12.00</ListPrice>
+    </Pet>
+    <Pet PetID="14">
+        <Name>Tina</Name>
+        <Category>Cat</Category>
+        <Breed>Sphynx</Breed>
+        <DateAdopted>01/06/2011</DateAdopted>
+        <Gender>Female</Gender>
+        <Registered>CFA</Registered>
+        <Color>Gold</Color>
+        <ListPrice currency="USD">143.94</ListPrice>
+    </Pet>
+    <Pet PetID="15">
+        <Name>Bonita</Name>
+        <Category>Dog</Category>
+        <Breed>Cocker Spaniel</Breed>
+        <DateAdopted>10/21/2011</DateAdopted>
+        <Gender>Female</Gender>
+        <Registered>AKC</Registered>
+        <Color>Gold</Color>
+        <ListPrice currency="USD">284.85</ListPrice>
+    </Pet>
+    <Pet PetID="16">
+        <Name>Lisa</Name>
+        <Category>Dog</Category>
+        <Breed>Great Pyrenees</Breed>
+        <DateAdopted>01/05/2011</DateAdopted>
+        <Gender>Female</Gender>
+        <Registered>AKC</Registered>
+        <Color>Brown</Color>
+        <ListPrice currency="USD">274.35</ListPrice>
+    </Pet>
+    <Pet PetID="17">
+        <Name>Jackie</Name>
+        <Category>Dog</Category>
+        <Breed>Doberman</Breed>
+        <DateAdopted>04/12/2011</DateAdopted>
+        <Gender>Male</Gender>
+        <Registered>AKC</Registered>
+        <Color>Black</Color>
+        <ListPrice currency="USD">165.73</ListPrice>
+    </Pet>
+    <Pet PetID="18">
+        <Name>Allison</Name>
+        <Category>Cat</Category>
+        <Breed>Manx</Breed>
+        <DateAdopted>04/21/2011</DateAdopted>
+        <Gender>Female</Gender>
+        <Registered>CFA</Registered>
+        <Color>Black</Color>
+        <ListPrice currency="USD">215.92</ListPrice>
+    </Pet>
+    <Pet PetID="21">
+        <Name>Debbie</Name>
+        <Category>Bird</Category>
+        <Breed>Cockatiel</Breed>
+        <DateAdopted>01/14/2011</DateAdopted>
+        <Gender>Female</Gender>
+        <Color>Blue</Color>
+        <ListPrice currency="USD">177.88</ListPrice>
+    </Pet>
+    <Pet PetID="27">
+        <Name>Gina</Name>
+        <Category>Reptile</Category>
+        <Breed>Gila Monster</Breed>
+        <DateAdopted>03/11/2011</DateAdopted>
+        <Gender>Male</Gender>
+        <Color>Green</Color>
+        <ListPrice currency="USD">192.08</ListPrice>
+    </Pet>
+    <Pet PetID="28">
+        <Name>Harry</Name>
+        <Category>Spider</Category>
+        <Breed>Tarantula</Breed>
+        <DateAdopted>02/07/2011</DateAdopted>
+        <Gender>Male</Gender>
+        <Color>Black</Color>
+        <ListPrice currency="USD">45.00</ListPrice>
+    </Pet>
+    <Pet PetID="43">
+        <Name>Chelsea</Name>
+        <Category>Reptile</Category>
+        <Breed>Python</Breed>
+        <DateAdopted>02/10/2011</DateAdopted>
+        <Gender>Female</Gender>
+        <Color>Black/Gold</Color>
+        <ListPrice currency="USD">237.90</ListPrice>
+    </Pet>
+</Pets>
+<!-- 
+    End of pets.xml
+    Notes: 
+    - All data was taken from pets.txt.
+    - Registered element included only where applicable.
+    - ListPrice values are stored with a currency attribute.
+-->
