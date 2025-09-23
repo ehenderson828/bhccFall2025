@@ -1,0 +1,26 @@
+Movies[class="root"] {
+    background-image: url(../assets/background/redcarpet7.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+poster[posterID="1"] {
+    background-image: url(../assets/flagShip/dayAftertomorrow.png);
+}
+
+poster[posterID="2"] {
+    background-image: url(../assets/flagShip/twister.png);
+}
+
+poster[posterID="3"] {
+    background-image: url(../assets/flagShip/volcano.jpg);
+}
+
+poster[posterID="4"] {
+    background-image: url(../assets/flagShip/armegeddon.jpg);
+}

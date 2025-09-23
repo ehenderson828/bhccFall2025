@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- Processing instruction -->
+<?xml-stylesheet type="text/css" href="styles/connect.css" ?>
+<!-- 
+    This document renders data for some of my favorite movies
+
+    Filename: ericHenderson_Hands-On-Project_2.xml
+    Author: Eric Henderson
+    Date: 9/23/25
+ -->
+<Movies class="root">
+    <collectionTitle>
+        Fantastic Films
+    </collectionTitle>
+    <movieSection>
+        <movie movieID="1">
+            <title>
+                The Day After Tomorrow
+            </title>
+            <poster posterID="1">
+                <!-- Used for background image -->
+            </poster>
+            <movieData>
+                <mainActors>
+                    <actor>
+                        Dennis Quaid &#9733;
+                    </actor>
+                    <actor>
+                        Jake Gyllenhall &#9733;
+                    </actor>
+                    <actor>
+                        Emmy Rossum
+                    </actor>
+                </mainActors>
+                <production>
+                    <director>
+                        Roland Emmerich &#x1F3A5;
+                    </director>
+                    <producer>
+                        Ute Emmerich
+                    </producer>
+                </production>
+                <releaseYear>
+                    2004
+                </releaseYear>
+                <genre>
+                    Action, Disaster, Survival
+                </genre>
+                <runTime>
+                    2:40:00
+                </runTime>
+            </movieData>
+            <![CDATA[  
+                Jack Hall, paleoclimatologist, must make a daring trek from Washington, D.C. to New York City to reach his son, trapped in the cross-hairs of a sudden international storm which plunges the planet into a new Ice Age.
+            ]]>
+        </movie>
+        <movie movieID="2">
+            <title>
+                Twister
+            </title>
+            <poster posterID="2">
+                <!-- Used for background image -->
+            </poster>
+            <movieData>
+                <mainActors>
+                    <actor>
+                        Hellen Hunt &#9733;
+                    </actor>
+                    <actor>
+                        Bill Paxton &#9733;
+                    </actor>
+                    <actor>
+                        Jami Gertz
+                    </actor>
+                </mainActors>
+                <production>
+                    <director>
+                        Jan de Bont &#x1F3A5;
+                    </director>
+                    <producer>
+                        Anne Marie-Martin
+                    </producer>
+                </production>
+                <releaseYear>
+                    1996
+                </releaseYear>
+                <genre>
+                    Action, Disaster, Thriller
+                </genre>
+                <runTime>
+                    1:43:00
+                </runTime>
+            </movieData>
+            <![CDATA[  
+                Two storm chasers on the brink of divorce must work together to create an advanced weather alert system by putting themselves in the cross-hairs of extremely violent tornadoes.
+            ]]>
+        </movie>
+        <movie movieID="3">
+            <title>
+                Volcano
+            </title>
+            <poster posterID="3">
+                <!-- Used for background image -->
+            </poster>
+            <movieData>
+                <mainActors>
+                    <actor>
+                        Tommy Lee Jones &#9733;
+                    </actor>
+                    <actor>
+                        Anne Heche &#9733;
+                    </actor>
+                    <actor>
+                        Gaby Hoffman
+                    </actor>
+                </mainActors>
+                <production>
+                    <director>
+                        Mick Jackson &#x1F3A5;
+                    </director>
+                    <producer>
+                        Charlie Davis
+                    </producer>
+                </production>
+                <releaseYear>
+                    1997
+                </releaseYear>
+                <genre>
+                    Action, Disaster, Drama
+                </genre>
+                <runTime>
+                    1:44:00
+                </runTime>
+            </movieData>
+            <![CDATA[  
+                A volcano erupts in downtown Los Angeles and a city official and a seismologist try to stop its inevitable flow through the city.
+            ]]>
+        </movie>
+        <movie movieID="4">
+            <title>
+                Armageddon
+            </title>
+            <poster posterID="4">
+                <!-- Used for background image -->
+            </poster>
+            <movieData>
+                <mainActors>
+                    <actor>
+                        Bruce Willis &#9733;
+                    </actor>
+                    <actor>
+                        Liv Tyler &#9733;
+                    </actor>
+                    <actor>
+                        Ben Affleck
+                    </actor>
+                </mainActors>
+                <production>
+                    <director>
+                        Michael Bay &#x1F3A5;
+                    </director>
+                    <producer>
+                        Joe Roth
+                    </producer>
+                </production>
+                <releaseYear>
+                    1998
+                </releaseYear>
+                <genre>
+                    Action, Disaster. Sci-Fi
+                </genre>
+                <runTime>
+                    2:31:00
+                </runTime>
+            </movieData>
+            <![CDATA[  
+                A volcano erupts in downtown Los Angeles and a city official and a seismologist try to stop its inevitable flow through the city.
+            ]]>
+        </movie>
+    </movieSection>
+</Movies>
+<!-- 
+    End of ericHenderson_Hands-On-Project_2.xml
+    Notes: 
+    - Unable to style CDATA
+    - Attributes only applied where necessary
+-->

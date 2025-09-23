@@ -1,0 +1,166 @@
+/* Variable import */
+@import url(vars.css);
+
+/* Box sizing reset: */
+* {
+    box-sizing: border-box;
+}
+
+Movies {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em;
+    padding: 0.5em;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+collectionTitle {
+    width: 80%;
+    height: 10%;
+    border: 0.1em solid var(--darkGray);
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 0.75em;
+    margin-top: 1.25em;
+    padding: 0.5em;
+    text-align: center;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+collectionTitle:hover {
+    animation: pulse 0.6s ease-in-out;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+movieSection {
+    width: 81%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 1.25em;
+    padding: 0.5em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1.25em;
+    grid-row-gap: 1.25em;
+}
+
+movie {
+    width: auto;
+    height: auto;
+    border: 0.1em solid var(--darkGray);
+    border-radius: 20px;
+    padding: 0.75em;
+    margin: 0;
+    background-color: var(--white);
+    opacity: 65%;
+    transition: opacity 0.5s ease-in-out;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+}
+
+movie:hover {
+    opacity: 100%;
+    animation: none;
+}
+
+title {
+    text-align: center;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1.25em;
+}
+
+poster {
+    background-size: cover;
+    border-radius: 20px;
+    width: 300px;
+    height: 350px;
+    display: block;
+    margin: auto;
+    margin-bottom: 1.25em;
+    border: 0.1em solid var(--darkGray);
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+poster:hover {
+    transform: scale(1.0125);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+movieData {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 1.25em;
+}
+
+mainActors::before {
+    content: "Starring: ";
+    color: var(--saffron);
+    font-weight: 800;
+}
+
+director::before {
+    content: "Director: ";
+    color: var(--saffron);
+    font-weight: 800;
+}
+
+producer::before {
+    content: "Producer: ";
+    color: var(--saffron);
+    font-weight: 800;
+}
+
+releaseYear::before {
+    content: "Release year: ";
+    color: var(--saffron);
+    font-weight: 800;
+}
+
+genre::before {
+    content: "Genre: ";
+    color: var(--saffron);
+    font-weight: 800;
+}
+
+runTime::before {
+    content: "Runtime: ";
+    color: var(--saffron);
+    font-weight: 800;
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 50em) {
+    movieSection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    movies {
+        overflow-x: hidden;
+    }
+
+    poster {
+        width: 200px;
+        height: 250px;
+    }
+}
