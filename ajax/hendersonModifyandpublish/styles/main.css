@@ -1,0 +1,148 @@
+/* Style reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Crimson Text', serif;
+    line-height: 1.6;
+    color: #2c3e50;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px 0;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #1a365d;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #4a5568;
+    font-style: italic;
+}
+
+#amendments-container {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+
+.amendment {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    margin: 3px 0;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #3182ce;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.amendment:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.amendment h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #1a365d;
+    margin-bottom: 10px;
+}
+
+.amendment h3 {
+    font-size: 1.4rem;
+    color: #2d3748;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.amendment-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4a5568;
+    margin-bottom: 20px;
+    text-align: justify;
+    text-indent: 2rem;
+}
+
+.ratified-date {
+    font-size: 0.95rem;
+    color: #718096;
+    text-align: right;
+    font-style: italic;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 15px;
+}
+
+/* Loading section style */
+.loading {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #4a5568;
+    padding: 50px;
+    font-style: italic;
+}
+
+/* Error handling styles */
+.error {
+    background: #fed7d7;
+    color: #c53030;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .amendment {
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+    .amendment h2 {
+        font-size: 1.8rem;
+    }
+
+    .amendment h3 {
+        font-size: 1.2rem;
+    }
+
+    .amendment-text {
+        font-size: 1rem;
+        text-indent: 1rem;
+    }
+}
