@@ -1,0 +1,184 @@
+/* Style reset: */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+/* Header styles */
+header {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* File input styling */
+#fileInput {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: white;
+    border: 2px solid #667eea;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+#fileInput::file-selector-button {
+    padding: 0.75rem 1.5rem;
+    margin-right: 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.85rem;
+}
+
+#fileInput::file-selector-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(102, 126, 234, 0.4);
+}
+
+#fileInput:hover {
+    border-color: #764ba2;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Table container */
+#fileTable {
+    visibility: hidden;
+    background-color: #FFF;
+    padding: 0.5em;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: none;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    overflow-x: auto;
+}
+
+/* This class gets added to fileTable once file is parsed */
+.tableVisibility {
+    visibility: visible !important;
+}
+
+/* Table header styles */
+#fileTable thead {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+#fileTable th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+/* Table body styles */
+#fileTable tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+    transition: all 0.2s ease;
+}
+
+#fileTable tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+#fileTable tbody tr:last-child {
+    border-bottom: none;
+}
+
+#fileTable td {
+    padding: 1rem;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+/* Alternating row colors */
+#fileTable tbody tr:nth-child(even) {
+    background-color: #fafafa;
+    transition: all 0.2em ease;
+}
+
+#fileTable tbody tr:nth-child(even):hover {
+    background-color: #f0f0f0;
+}
+
+/* Table with many columns - fit all on larger screens */
+@media (min-width: 769px) {
+    #fileTable {
+        max-width: 90vw;
+        table-layout: auto;
+    }
+
+    #fileTable thead,
+    #fileTable tbody,
+    #fileTable tr {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    #fileTable th,
+    #fileTable td {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.85rem;
+        word-wrap: break-word;
+    }
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    #fileTable {
+        max-width: 100vw;
+    }
+
+    #fileTable th,
+    #fileTable td {
+        padding: 0.5rem;
+        font-size: 0.75rem;
+        white-space: nowrap;
+        min-width: 100px;
+    }
+
+    #fileTable th {
+        font-size: 0.7rem;
+    }
+}

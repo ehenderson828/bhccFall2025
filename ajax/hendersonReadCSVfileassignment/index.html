@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- External CSS Import -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="assets/favicon.png">
+    <title>Eric's File Parser</title>
+</head>
+<body>
+    <header>
+        Eric's File Parser
+    </header>
+    <input type="file" id="fileInput" accept=".csv,.xlsx" />
+    <table id="fileTable">
+        <thead>
+            <tr id="fileTableHeader">
+                <!-- Table headers to be appended here -->
+            </tr>
+        </thead>
+        <tbody id="fileTableBody">
+            <!-- Child elements to be appended here -->
+        </tbody>
+    </table>
+    <!-- SheetJS Library Import -->
+    <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+    <!-- Papa Parse CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script>
+        // Selection of the input button and additional of 'change' event listener
+        document.getElementById('fileInput').addEventListener('change', (event) => {
+            // Declaration and assignment of selected file at position [0]
+            const file = event.target.files[0];
+            // If file is present:
+            if (file) {
+                // Get file name
+                const fileName = file.name;
+                // Split out just the file extension
+                const fileExtension = fileName.split('.').pop().toLowerCase();
+                // Check if file is XLSX, and use SheetJS to parse
+                if (fileExtension === 'xlsx') {
+                    // New FileReader declaration
+                    const reader = new FileReader();
+                    // Start parsing once the file has loaded
+                    reader.onload = (e) => {
+                        // Parse the ArrayBuffer with SheetJS (entire workbook)
+                        const data = new Uint8Array(e.target.result); // e.target.result = where FileReader() stored the result
+                        // Parse the 8-bit integer array
+                        const workbook = XLSX.read(data, { type: 'array' });
+                        // Get the first worksheet in the larger workbook
+                        const firstSheetName = workbook.SheetNames[0];
+                        // Declare a variable assigned to the sheet in the first array position
+                        const worksheet = workbook.Sheets[firstSheetName];
+                        // Convert to JSON, skipping the first row (empty)
+                        const jsonData = XLSX.utils.sheet_to_json(worksheet, { range: 1 });
+                        // Render the parsed data
+                        displayFiledata(jsonData);
+                    };
+                    reader.readAsArrayBuffer(file);
+                }
+                // If file is CSV
+                else if (fileExtension === 'csv') {
+                    // Parse the selected file with PapaParse
+                    Papa.parse(file, {
+                        // Assign column names based on the first row
+                        header: true,
+                        // Convert any strings to numbers/bools from strings
+                        dynamicTyping: true,
+                        // Function callback once parsing is complete
+                        complete: (results) => {
+                            // Render the parsed data
+                            displayFiledata(results.data);
+                        }
+                    });
+                }
+                // Warn the user if neither a CSV or XLSX file has been selected
+                else {
+                    alert("Please select a CSV or XLSX file");
+                }
+            }
+            // If file is not present, warn the user:
+            else {
+                alert("Error gathering data");
+            }
+        });
+        // Function to render the data parsed from CSV
+        function displayFiledata(data) {
+            // Selection of table, headers and table body
+            const tableHeader = document.getElementById('fileTableHeader');
+            const tableBody = document.getElementById('fileTableBody');
+            const table = document.getElementById('fileTable');
+            // Clear previous data
+            tableHeader.innerHTML = '';
+            tableBody.innerHTML = '';
+            // Check if data exists and has rows
+            if (!data || data.length === 0) {
+                alert('No data found in file');
+                return;
+            }
+            // Set table headers
+            const headers = Object.keys(data[0]);
+            // Loop over each column name
+            headers.forEach((header) => {
+                // Create table headers for each column name
+                const th = document.createElement('th');
+                // Add line break after first word if header has multiple words
+                const words = header.split(' ');
+                if (words.length > 1) {
+                    th.innerHTML = words[0] + '<br>' + words.slice(1).join(' ');
+                } 
+                else {
+                    th.textContent = header;
+                }
+                // Append each th to the table columns
+                tableHeader.appendChild(th);
+            });
+            // Set table rows by looping over each row in the CSV
+            data.forEach((row) => {
+                // Create new table row elements
+                const tr = document.createElement('tr');
+                // Loop over each header's row content
+                headers.forEach((header) => {
+                    // Create new table data
+                    const td = document.createElement('td');
+                    // Get the cell value
+                    let cellValue = row[header];
+                    // Format numbers that look like prices (parser was originally not including dollar signs)
+                    if (typeof cellValue === 'number' && (header.toLowerCase().includes('price') ||
+                        header.toLowerCase().includes('value'))) {
+                            cellValue = '$' + cellValue.toFixed(2);
+                    }
+                    // Assign the row text to table data at position [header]
+                    td.textContent = cellValue;
+                    // Append this new table data to table rows
+                    tr.appendChild(td);
+                });
+                // Append each new table row to the table body
+                tableBody.appendChild(tr);
+            });
+            // Render the table visible
+            table.classList.add('tableVisibility');
+        }
+    </script>
+</body>
+</html>
