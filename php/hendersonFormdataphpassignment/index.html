@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- External CSS Import -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <title>Eric Henderson's MadLibs Generator</title>
+</head>
+<body>
+    <h1>
+        Eric Henderson's MadLibs Generator
+    </h1>
+    <p>
+        Submit entries for the following words for a MadLibs Story based on a students first day at BHCC!
+    </p>
+    <!-- Form start -->
+    <form action="backend/story.php" method="post">
+        <label for="firstName1">First name:</label>
+        <input
+            type="text"
+            id="firstName1"
+            name="firstName1"
+            required
+            maxlength="20"
+        >
+        <label for="firstName2">First name:</label>
+        <input
+            type="text"
+            id="firstName2"
+            name="firstName2"
+            required
+            maxlength="20"
+        >
+        <label for="firstName3">First name:</label>
+        <input
+            type="text"
+            id="firstName3"
+            name="firstName3"
+            required
+            maxlength="20"
+        >
+        <label for="location1">Location:</label>
+        <input
+            type="text"
+            id="location1"
+            name="location1"
+            required
+            maxlength="20"
+        >
+        <label for="location2">Location:</label>
+        <input
+            type="text"
+            id="location2"
+            name="location2"
+            required
+            maxlength="20"
+        >
+        <label for="adjective1">Adjective:</label>
+        <input
+            type="text"
+            id="adjective1"
+            name="adjective1"
+            required
+            maxlength="20"
+        >
+        <label for="adjective2">Adjective:</label>
+        <input
+            type="text"
+            id="adjective2"
+            name="adjective2"
+            required
+            maxlength="20"
+        >
+        <label for="object1">Object:</label>
+        <input
+            type="text"
+            id="object1"
+            name="object1"
+            required
+            maxlength="20"
+        >
+        <label for="object2">Object:</label>
+        <input
+            type="text"
+            id="object2"
+            name="object2"
+            required
+            maxlength="20"
+        >
+        <label for="object3">Object:</label>
+        <input
+            type="text"
+            id="object3"
+            name="object3"
+            required
+            maxlength="20"
+        >
+        <label for="verb1">Verb:</label>
+        <input
+            type="text"
+            id="verb1"
+            name="verb1"
+            required
+            maxlength="20"
+        >
+        <label for="verb2">Verb:</label>
+        <input
+            type="text"
+            id="verb2"
+            name="verb2"
+            required
+            maxlength="20"
+        >
+        <label for="verb3">Verb:</label>
+        <input
+            type="text"
+            id="verb3"
+            name="verb3"
+            required
+            maxlength="20"
+        >
+        <label for="adverb">Adverb:</label>
+        <input
+            type="text"
+            id="adverb"
+            name="adverb"
+            required
+            maxlength="20"
+        >
+        <label for="professor">Professor's Last Name:</label>
+        <input
+            type="text"
+            id="professor"
+            name="professor"
+            required
+            maxlength="20"
+        >
+        <br>
+        <input type="submit" name="madlib" id="submit-button">
+    <!-- Form end -->
+</body>
+</html>
