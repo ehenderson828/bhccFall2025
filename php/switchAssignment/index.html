@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Assignment</title>
+    <!-- External CSS import -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Weather-Based Activity Planner</h1>
+    </header>
+    <!-- Temperature range form - handled by switch.php -->
+    <form action="backend/switch.php">
+        <select name="temps" id="temps">
+            <option value="default" disabled selected>Choose from List</option>
+            <option value="below0">Below 0°F</option>
+            <option value="0-20">0-20°F</option>
+            <option value="20-32">20-32°F</option>
+            <option value="32-45">32-45°F</option>
+            <option value="45-60">45-60°F</option>
+            <option value="60-70">60-70°F</option>
+            <option value="70-80">70-80°F</option>
+            <option value="80-90">80-90°F</option>
+            <option value="90-100">90-100°F</option>
+            <option value="above100">Above 100°F</option>
+        </select>
+        <!-- Submission button -->
+        <button type="submit" id="submitbtn">Get Your Recommended Activity</button>
+    </form>
+</body>
+</html>

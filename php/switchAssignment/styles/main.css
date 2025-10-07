@@ -1,0 +1,150 @@
+/* Weather Channel-inspired styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7fa5d8 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+}
+
+/* Weather card container */
+form, .weather-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+}
+
+.weather-card {
+    margin-top: 20px;
+}
+
+/* Select dropdown styling */
+select {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    border: 2px solid #2a5298;
+    border-radius: 8px;
+    background: white;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%232a5298' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    padding-right: 40px;
+}
+
+select:hover {
+    border-color: #ff8c00;
+    box-shadow: 0 0 8px rgba(255, 140, 0, 0.3);
+}
+
+select:focus {
+    outline: none;
+    border-color: #ff8c00;
+    box-shadow: 0 0 12px rgba(255, 140, 0, 0.4);
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, #ff8c00 0%, #ff6b00 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(255, 140, 0, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff6b00 0%, #ff5500 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 140, 0, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Results page styling */
+.weather-card h2 {
+    color: #1e3c72;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 3px solid #ff8c00;
+    padding-bottom: 10px;
+}
+
+.weather-card p {
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 20px;
+    background: rgba(42, 82, 152, 0.05);
+    border-radius: 8px;
+    border-left: 4px solid #2a5298;
+}
+
+/* Back button styling */
+.back-button {
+    background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+    margin-top: 10px;
+}
+
+.back-button:hover {
+    background: linear-gradient(135deg, #1e3c72 0%, #162949 100%);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    form, .weather-card {
+        padding: 25px;
+    }
+
+    select, button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
