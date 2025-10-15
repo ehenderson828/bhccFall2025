@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--
+   MDPBA Competition Roster
+   Author: Eric Henderson
+   Date: 10/14/25
+
+   Filename:         mdpba.xml
+-->
+<!-- Document Type Definition (DTD) -->
+<!DOCTYPE bands [
+   <!-- bands element - with a band child that occurs at least once -->
+   <!ELEMENT bands (band+)>
+   <!-- band element - containing each child element in sequence -->
+   <!ELEMENT band (name, city, logo?, competition)>
+   <!ATTLIST band cid ID #REQUIRED>
+   <!-- name element - containing CDATA -->
+   <!ELEMENT name (#PCDATA)>
+   <!ATTLIST name grade (1 | 2 | 3 | 4 | 5 | juvenile | novice) #REQUIRED>
+   <!-- city element - containing CDATA -->
+   <!ELEMENT city (#PCDATA)>
+   <!-- logo element - empty element -->
+   <!ELEMENT logo EMPTY>
+   <!ATTLIST logo 
+      source ENTITY #REQUIRED>
+   <!-- competition element - parent to exactly two event elements -->
+   <!ELEMENT competition (event, event)>
+   <!-- event element - parent to at least one tune element -->
+   <!ELEMENT event (tune+)>
+   <!ATTLIST event type (MSR | Medley) #REQUIRED>
+   <!-- tune element - parent to CDATA -->
+   <!ELEMENT tune (#PCDATA)>
+
+   <!-- Notation declaration -->
+   <!NOTATION JPG SYSTEM "image/jpg">
+
+   <!ENTITY celtic SYSTEM "celtic.jpg" NDATA JPG>
+   <!ENTITY badger SYSTEM "badger.jpg" NDATA JPG>
+]>
+<bands name="Midwest Developmental Pipe Band">
+   <band cid="c0001">
+      <name grade="juvenile">School of Celtic Bagpipes &amp; Drumming</name>
+      <city>Delafield</city>
+      <logo source="celtic" />
+      <competition>
+         <event type="MSR">
+            <tune>Charlies Welcome</tune>
+            <tune>Mrs MacPherson of Inveran</tune>
+            <tune>Brown Haired Maiden</tune>
+         </event>
+         <event type="Medley">
+            <tune>Rowd's Hornpipe</tune>
+         </event>
+      </competition>
+   </band>
+   <band cid="c0002">
+      <name grade="juvenile">Badger Pipes and Drums</name>
+      <city>Madison</city>
+      <logo source="badger" />
+      <competition>
+         <event type="MSR">
+            <tune>Lord Alexander Kennedy</tune>
+            <tune>Bob of Fettercairn</tune>
+            <tune>Brown Haired Maiden</tune>
+         </event>
+         <event type="Medley">
+            <tune>Out of the Air</tune>
+         </event>
+      </competition>
+   </band>
+   <band cid="c0003">
+      <name grade="novice">Pardeeville School of Piping and Drumming</name>
+      <city>Pardeeville</city>
+      <competition>
+         <event type="MSR">
+            <tune>Lord Alexander Kennedy</tune>
+            <tune>Bob of Fettercairn</tune>
+            <tune>The Little Cascade</tune>
+         </event>
+         <event type="Medley">
+            <tune>The Radar Racketeer</tune>
+         </event>
+      </competition>
+   </band>
+   <band cid="c0004">
+      <name grade="3">Zoar Scottish Pipe Band</name>
+      <city>Zoar</city>
+      <competition>
+         <event type="MSR">
+            <tune>Charlies Welcome</tune>
+            <tune>Mrs MacPherson of Inveran</tune>
+            <tune>Major Manson</tune>
+         </event>
+         <event type="Medley">
+            <tune>Miss Lily</tune>
+         </event>
+      </competition>
+   </band>
+   <band cid="c0005">
+      <name grade="juvenile">Stockholm Pipe Band</name>
+      <city>Stockholm</city>
+      <competition>
+         <event type="MSR">
+            <tune>Pretty Marion</tune>
+            <tune>The Sheepwife</tune>
+            <tune>Brown Haired Maiden</tune>
+         </event>
+         <event type="Medley">
+            <tune>Farewell to Erin</tune>
+          </event>
+      </competition>
+   </band>
+</bands>
