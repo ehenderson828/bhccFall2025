@@ -1,0 +1,138 @@
+/* Style reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container Styling */
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 40px 50px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* City Name */
+.city {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+/* Weather Icon */
+.icon {
+    width: 120px;
+    height: 120px;
+    margin: 20px 0;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Weather Description */
+.weather {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+/* Temperature */
+.temp {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #667eea;
+    margin-top: 15px;
+    letter-spacing: 2px;
+}
+
+.temp_warm {
+    color: #F7B500 !important;
+}
+
+.temp_hot {
+    color: #F00000 !important;
+}
+
+.temp::after {
+    content: '°F';
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #7f8c8d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 25px;
+    }
+
+    .city {
+        font-size: 2rem;
+    }
+
+    .icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .weather {
+        font-size: 1.2rem;
+    }
+
+    .temp {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .city {
+        font-size: 1.75rem;
+    }
+
+    .icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .weather {
+        font-size: 1.1rem;
+    }
+
+    .temp {
+        font-size: 2rem;
+    }
+}
