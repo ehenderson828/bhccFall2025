@@ -1,0 +1,298 @@
+/* Style reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* BHCC Color Palette */
+    --bhcc-primary-blue: #003B7D;
+    --bhcc-secondary-blue: #0066B3;
+    --bhcc-light-blue: #E6F2FF;
+    --bhcc-accent-red: #B41E2E;
+    --bhcc-dark-gray: #333333;
+    --bhcc-medium-gray: #666666;
+    --bhcc-light-gray: #F5F5F5;
+    --bhcc-border-gray: #DDDDDD;
+    --bhcc-white: #FFFFFF;
+    --bhcc-success-green: #28A745;
+    --bhcc-warning-yellow: #FFC107;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, var(--bhcc-light-blue) 0%, var(--bhcc-white) 100%);
+    color: var(--bhcc-dark-gray);
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--bhcc-white);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 59, 125, 0.15);
+    border-top: 5px solid var(--bhcc-primary-blue);
+}
+
+h1 {
+    color: var(--bhcc-primary-blue);
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid var(--bhcc-secondary-blue);
+}
+
+h2 {
+    color: var(--bhcc-secondary-blue);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+h3 {
+    color: var(--bhcc-primary-blue);
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    font-weight: 600;
+    border-left: 4px solid var(--bhcc-accent-red);
+    padding-left: 12px;
+}
+
+form {
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    color: var(--bhcc-primary-blue);
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+input[type="text"],
+input[type="tel"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid var(--bhcc-border-gray);
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: var(--bhcc-white);
+    color: var(--bhcc-dark-gray);
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus {
+    outline: none;
+    border-color: var(--bhcc-secondary-blue);
+    box-shadow: 0 0 0 3px rgba(0, 102, 179, 0.1);
+    background-color: var(--bhcc-light-blue);
+}
+
+input[type="text"]:hover,
+input[type="tel"]:hover {
+    border-color: var(--bhcc-secondary-blue);
+}
+
+input::placeholder {
+    color: var(--bhcc-medium-gray);
+    opacity: 0.7;
+}
+
+button {
+    background: linear-gradient(135deg, var(--bhcc-primary-blue) 0%, var(--bhcc-secondary-blue) 100%);
+    color: var(--bhcc-white);
+    padding: 14px 35px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 59, 125, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: linear-gradient(135deg, var(--bhcc-secondary-blue) 0%, var(--bhcc-primary-blue) 100%);
+    box-shadow: 0 6px 15px rgba(0, 59, 125, 0.3);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 59, 125, 0.2);
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+.confirmation-box {
+    background-color: var(--bhcc-light-blue);
+    border: 2px solid var(--bhcc-secondary-blue);
+    border-radius: 8px;
+    padding: 30px;
+    margin: 20px 0;
+}
+
+.confirmation-box h2 {
+    color: var(--bhcc-primary-blue);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.confirmation-box > p {
+    text-align: center;
+    color: var(--bhcc-medium-gray);
+    margin-bottom: 25px;
+    font-size: 1.05rem;
+}
+
+.info-section {
+    background-color: var(--bhcc-white);
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid var(--bhcc-secondary-blue);
+}
+
+.info-section:last-of-type {
+    margin-bottom: 0;
+}
+
+.info-section p {
+    margin-bottom: 12px;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--bhcc-dark-gray);
+}
+
+.info-section p:last-child {
+    margin-bottom: 0;
+}
+
+.info-section strong {
+    color: var(--bhcc-primary-blue);
+    font-weight: 600;
+    display: inline-block;
+    min-width: 140px;
+}
+
+.error-message {
+    background-color: #FFEBEE;
+    border: 2px solid var(--bhcc-accent-red);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.error-message p {
+    color: var(--bhcc-accent-red);
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+input:required {
+    border-left: 4px solid var(--bhcc-accent-red);
+}
+
+input:required:valid {
+    border-left: 4px solid var(--bhcc-success-green);
+}
+
+/* Media query */
+@media (max-width: 768px) {
+    .container {
+        padding: 25px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    input[type="text"],
+    input[type="tel"] {
+        padding: 10px 12px;
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 0.95rem;
+    }
+
+    .info-section strong {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+}
+
+/* Focus style */
+input:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--bhcc-secondary-blue);
+    outline-offset: 2px;
+}
+
+/* Animation once page loads */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: fadeIn 0.5s ease-out;
+}

@@ -1,0 +1,170 @@
+/* BHCC Brand Colors */
+:root {
+    --bhcc-red: #c8102e;
+    --bhcc-grey: #707372;
+    --bhcc-black: #000000;
+    --bhcc-white: #ffffff;
+    --bhcc-light-grey: #f5f5f5;
+    --bhcc-border: #e0e0e0;
+}
+
+/* Style reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bhcc-light-grey);
+    color: var(--bhcc-black);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: linear-gradient(135deg, var(--bhcc-red) 0%, #a00d25 100%);
+    color: var(--bhcc-white);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem 1rem;
+}
+
+.form-container {
+    background: var(--bhcc-white);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    padding: 3rem;
+    max-width: 500px;
+    width: 100%;
+    border-top: 5px solid var(--bhcc-red);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-label {
+    color: var(--bhcc-grey);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+select {
+    padding: 1rem;
+    font-size: 1rem;
+    border: 2px solid var(--bhcc-border);
+    border-radius: 8px;
+    background-color: var(--bhcc-white);
+    color: var(--bhcc-black);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+select:hover {
+    border-color: var(--bhcc-grey);
+}
+
+select:focus {
+    outline: none;
+    border-color: var(--bhcc-red);
+    box-shadow: 0 0 0 3px rgba(200, 16, 46, 0.1);
+}
+
+button[type="submit"] {
+    background: var(--bhcc-red);
+    color: var(--bhcc-white);
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 12px rgba(200, 16, 46, 0.3);
+}
+
+button[type="submit"]:hover {
+    background: #a00d25;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(200, 16, 46, 0.4);
+}
+
+button[type="submit"]:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(200, 16, 46, 0.3);
+}
+
+.result {
+    margin-top: 2rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--bhcc-light-grey) 0%, #e8e8e8 100%);
+    border-radius: 8px;
+    text-align: center;
+    border-left: 5px solid var(--bhcc-red);
+    animation: fadeIn 0.5s ease;
+}
+
+.final-grade {
+    color: var(--bhcc-red);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Query*/
+@media (max-width: 600px) {
+    .header {
+        font-size: 1.5rem;
+        padding: 1.5rem 1rem;
+    }
+
+    .form-container {
+        padding: 2rem 1.5rem;
+        margin: 1rem;
+    }
+
+    .final-grade {
+        font-size: 1.4rem;
+    }
+
+    main {
+        padding: 2rem 0.5rem;
+    }
+}
