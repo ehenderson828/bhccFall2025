@@ -5,11 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- External CSS import -->
     <link rel="stylesheet" href="styles/main.css">
+    <!-- External JavaScript import -->
+    <script src="frontend/main.js"></script>
     <title>Ajax Midterm - Problem 2</title>
 </head>
 <body>
-    
-    <!-- External JavaScript import -->
-    <script src="frontend/main.js"></script>
+    <header class="header">
+        Cecilia's Sensational CDs
+    </header>
+    <main class="table-container">
+        <button class="render-button">Load Collection</button>
+        <table class="table">
+            <thead class="table-header">
+                <tr>
+                    <td class="column-header">Title:</td>
+                    <td class="column-header">Artist:</td>
+                    <td class="column-header">Country:</td>
+                    <td class="column-header">Company:</td>
+                    <td class="column-header">Price:</td>
+                    <td class="column-header">Year:</td>
+                </tr>
+            </thead>
+            <tbody class="table-body">
+                <!-- CD Collection to be appended here -->
+            </tbody>
+            <tfoot class="table-footer">
+                <!-- Total CDs counted here -->
+            </tfoot>
+        </table>
+    </main>
 </body>
 </html>

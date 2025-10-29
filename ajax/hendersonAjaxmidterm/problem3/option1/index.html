@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- External CSS import -->
-    <link rel="stylesheet" href="styles/main.css">
-    <title>Ajax Midterm - Problem 3</title>
-</head>
-<body>
-    
-    <!-- External JavaScript import -->
-    <script src="frontend/main.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- External CSS import -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- External JavaScript import -->
+        <script src="frontend/main.js"></script>
+        <title>Ajax Midterm - Problem 3</title>
+    </head>
+    <body>
+        <!-- Header with title and quote author names -->
+        <header class="header">
+            <h1 class="title">Famous Quotes</h1>
+            <p>*Click more than once to see different quotes*</p>
+            <div class="authors-container">
+                <h4 class="author" data-author="albert-einstein">Albert Einstein</h4>
+                <h4 class="author" data-author="martin-luther-king-jr">Martin Luther King Jr.</h4>
+                <h4 class="author" data-author="nelson-mandela">Nelson Mandela</h4>
+                <h4 class="author" data-author="maya-angelou">Maya Angelou</h4>
+            </div>
+        </header>
+        <!-- Hidden on load, will render once author is clicked -->
+        <main class="quote-display">
+            <div id="author-info" class="hidden">
+                <button id="close-btn" class="close-button">&times;</button>
+                <!-- Image src to be rendered after user selection -->
+                <img id="author-image" src="" alt="Author image">
+                <blockquote id="quote-text"></blockquote>
+            </div>
+        </main>
+    </body>
 </html>
