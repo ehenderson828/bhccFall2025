@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <!-- jQuery Mobile Stylesheet -->
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <!-- External Stylesheet -->
+        <link rel="stylesheet" href="styles/main.css" />
+        <!-- jQuery core CDN -->
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <!-- jQuery mobile CDN -->
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <!-- jQuery Validate import -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+        <!-- Additional jQuery methods import -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js"></script>	
+        <title>Contact Us</title>
+    </head>
+    <body>
+        <!-- Contact page start -->
+        <div data-role="page" id="contact">
+            <div 
+                data-role="header" 
+                id="header"
+                data-theme="b"
+            >
+                <h1>
+                    Eric's First jQuery Mobile Project
+                </h1>
+            </div>
+            <div data-role="navbar" id="navbar">
+                <ul>
+                    <li><a
+                            href="index.html"
+                            data-icon="home"
+                            data-shadow="true"
+                            rel="external"
+                        >Home
+                        </a>
+                    </li>
+                    <li><a
+                            href="index.html#video"
+                            data-icon="video"
+                            data-shadow="true"
+                            rel="external"
+                        >Video
+                        </a>
+                    </li>
+                    <li><a 
+                            href="contact.html" 
+                            data-icon="phone"
+                            data-shadow="true"
+                        >Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div data-role="main" class="form-content">
+                <form 
+                    action="response.html" 
+                    method="get"
+                    name="contact_form" 
+                    id="contact_form"
+                >
+                    <fieldset>
+                        <legend id="legend">Submit Contact Info Below ⬇️</legend>
+                        <br>
+                        <label for="first_name">First Name:</label>
+                        <input 
+                            type="text" 
+                            name="first_name" 
+                            id="first_name"
+                        >
+                        <br>
+                        <label for="last_name">Last Name:</label>
+                        <input
+                            type="text" 
+                            name="last_name" 
+                            id="last_name"
+                        >
+                        <br>
+                        <label for="phone">Phone Number:</label>
+                        <input 
+                            type="tel" 
+                            name="phone" 
+                            id="phone" 
+                            placeholder="999-999-9999"
+                        >
+                        <br>
+                        <label for="email">Email Address:</label>
+                        <input 
+                            type="email" 
+                            name="email" 
+                            id="email"
+                        >
+                        <br>
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" placeholder="Enter your message here..."></textarea>
+                    </fieldset>	
+                    <br>
+                    <input 
+                        type="submit" 
+                        id="submit" 
+                        value="Submit Request"
+                    >
+                    <br>
+                    <button type="button" id="reset">
+                        Reset Form
+                    </button>
+                    <br>
+                </form>
+            </div>
+            <div data-role="footer">
+                <h3>Eric Henderson &copy; 2026</h3>
+            </div>
+            <!-- Success Popup Modal -->
+            <div data-role="popup" id="successPopup" class="ui-content" data-theme="a">
+                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                <h3>Success!</h3>
+                <p>Your contact form has been submitted successfully.</p>
+                <p>We will get back to you soon!</p>
+            </div>
+        </div>
+        <!-- End contact page -->
+        <!-- External JS import -->
+        <script src="frontend/contact.js"></script>
+    </body>
+</html>

@@ -1,0 +1,116 @@
+.ui-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#content-text {
+    text-align: center;
+}
+
+#image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+#legend {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 400;
+    min-height: 1.1em;
+    padding: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    color: #FFF;
+    background-color: #1D1D1D;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+label {
+    text-align: center;
+}
+
+input, textarea {
+    width: 90% !important;
+    margin: 0 auto;
+    display: block;
+}
+
+.ui-input-text, .ui-input-search {
+    width: 90% !important;
+    margin: 0 auto !important;
+}
+
+fieldset input[type="text"],
+fieldset input[type="tel"],
+fieldset input[type="email"],
+fieldset textarea {
+    width: 90% !important;
+    max-width: 90% !important;
+}
+
+#submit, #reset,
+button[type="button"],
+input[type="submit"] {
+    width: 90% !important;
+    margin: 0 auto !important;
+    display: block !important;
+    box-sizing: border-box !important;
+}
+
+.ui-input-btn {
+    width: 90% !important;
+    margin: 0 auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+#reset {
+    background-color: red !important;
+    color: white !important;
+    border: 2px solid white !important;
+    transition: opacity 0.3s ease !important;
+}
+
+#reset:hover {
+    opacity: 0.7 !important;
+    cursor: pointer !important;
+}
+
+label.error {
+    color: #ff3333 !important;
+    font-weight: bold !important;
+    font-size: 0.9em !important;
+    margin-top: 5px !important;
+    display: block !important;
+    text-align: center !important;
+    background-color: #ffe6e6 !important;
+    padding: 8px !important;
+    border: 1px solid #ff3333 !important;
+    border-radius: 4px !important;
+    width: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+}
+
+#successPopup {
+    max-width: 400px !important;
+    padding: 20px !important;
+    text-align: center !important;
+}
+
+#successPopup h3 {
+    color: #28a745 !important;
+    font-size: 1.5em !important;
+    margin-bottom: 10px !important;
+}
+
+#successPopup p {
+    font-size: 1em !important;
+    margin: 10px 0 !important;
+}
