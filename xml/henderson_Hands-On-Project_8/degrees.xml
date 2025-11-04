@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+   New Perspectives on XML
+   Tutorial 3
+   Review Assignments
+
+   Austin Technical College information technology degree list
+   Author: Eric Henderson
+   Date: 11/3/25
+
+   Filename:           degrees.xml
+   Supporting Files:   degrees.xsd
+-->
+
+
+
+<degrees
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="degrees.xsd"
+>
+   <degree degreeID="IT10-152-100" degreeCode="MP">
+      <title>Information Technology-Mobile Programmer</title>
+      <approvalDate>2019-01-12</approvalDate>
+      <effectiveDate>2019-09-01</effectiveDate>
+      <summary>This two-year program meets the specific skill and knowledge requirements
+	of technical and professional jobs within the information technology field for
+	an entry-level mobile programmer working in a small to medium size
+	organization. Training blends general educational development with required
+	IT technical skills. Emphasis is in mobile web and application development.
+      </summary>
+      <coordinator>Janis Wu</coordinator>
+      <comment date="2019-01-12">Janis Wu contacted regards heads up on approval.  Official paperwork is being sent</comment>
+      <comment date="2019-01-01">Janis Wu assigned as coordinator</comment>
+      <comment date="2018-12-01">Application draft submitted</comment>
+   </degree>
+
+    <degree degreeID="IT10-152-200" degreeCode="SP">
+      <title>Information Technology-Software Programmer</title>
+      <approvalDate>2017-12-12</approvalDate>
+      <effectiveDate>2018-09-01</effectiveDate>
+      <summary>This two-year program meets the specific skill and knowledge requirements of technical and 
+      	professional jobs within the information technology field for an entry-level software programmer.
+	Training meets the educational needs for most segments of the IT field, which primarily utilize
+	small to midsize computers in conjunction with web and server applications. Emphasis is in LAMP and
+	object-oriented languages. 
+      </summary>
+      <coordinator>Taylor Wapner</coordinator>
+      <comment date="2019-06-12">Updates are being sent for approval</comment>
+      <comment date="2018-12-01">Taylor Wapner assigned as coordinator</comment>
+      <comment date="2017-12-12">Phil Bean contacted regards heads up on approval.  Official paperwork is being sent</comment>
+      <comment date="2017-06-01">Phil Bean assigned as coordinator</comment>
+      <comment date="2017-06-01">Application draft submitted</comment>
+   </degree>
+   
+   <degree degreeID="IT10-152-300" degreeCode="WPA">
+      <title>Information Technology-Web Programmer/Analyst</title>
+      <approvalDate>2017-12-12</approvalDate>
+      <effectiveDate>2018-09-01</effectiveDate>
+      <summary>The Web Programmer/Analyst program meets the specific skill and knowledge requirements 
+      	of technical and professional jobs within the information technology field for an entry-level Web 
+      	analyst/programmer. It is designed to meet entry-level educational needs of most segments of 
+      	the IT field which utilize a variety of computers. Training blends general educational development 
+      	and required IT technical skills. Graduates are prepared for entry-level web developer jobs in 
+      	government, insurance, manufacturing, service, software development, wholesale and retail 
+      	sales, utilities, banking, and accounting.
+      </summary>
+      <coordinator>Christiana Sanchez</coordinator>
+      <comment date="2018-12-01">Christiana Sanchez assigned as coordinator</comment>
+      <comment date="2017-12-12">Taylor Wapner contact regards heads up on approval.  Official paperwork is being sent</comment>
+      <comment date="2017-06-01">Taylor Wapner assigned as coordinator</comment>
+      <comment date="2017-06-01">Application draft submitted</comment>
+   </degree>
+   
+</degrees>
