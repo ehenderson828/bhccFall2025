@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<!-- jQuery CDN -->
+		<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<!-- External Style Sheet -->
+		<link rel="stylesheet" href="styles/style.css" />
+		<!-- Site favicon -->
+		<link rel="icon" href="assets/favicon.png" type="image/png">
+		<title>Weather API Project</title>
+	</head>
+	<body>
+		<header class="container header">
+			<h1 class="heading">Eric's First jQuery Weather App</h1>
+		</header>
+		<div class="container">
+			<form id="weatherForm">
+				<input type="text" id="cityInput" placeholder="City name here..." />
+				<button type="submit" id="getWeatherButton">Get Weather</button>
+			</form>
+			<p class="selected-city city"></p>
+			<img class="icon" src="" />
+			<p class="weather"></p>
+			<p class="temp"></p>
+			<p class="feels-like"></p>
+			<button id="goBackButton" style="display: none;">Go Back</button>
+		</div>
+		<footer class="container">
+			<h5 class="heading">
+				Site Author: Eric Henderson &copy; 2025
+			</h5>
+		</footer>
+		<!-- External JS -->
+		<script src="frontend/script.js"></script>
+	</body>
+</html>
