@@ -1,0 +1,67 @@
+"Customer ID","Last Name","First Name",City,State,Gender,DOB,Years,Age
+Al-230,Alexander,Chris,"Bowling Green",OH,F,1950-12-08,70,33
+An-329,Anik,Mazhar,"Grand Rapids",OH,F,1953-10-06,67,25
+As-231,Asmus,Carol,Weston,OH,F,1985-03-06,35,36
+Be-358,Betz,Jill,Weston,OH,F,1993-09-25,27,66
+Co-094,Colchagoff,Lori,McComb,OH,F,N/A,N/A,22
+Cr-903,Crawford,Susan,Custer,OH,F,N/A,N/A,19
+Dw-722,Dworsky,Megan,"North Baltimore",OH,F,N/A,N/A,65
+Ec-734,Eckert,Erin,Custar,OH,F,N/A,N/A,35
+Fe-003,Fetrow,Mildred,McComb,OH,F,N/A,N/A,67
+Fo-982,Foxhuber,Cindy,Weston,OH,F,N/A,N/A,31
+Ga-983,Gallmeier,Rita,"North Baltimore",OH,F,N/A,N/A,23
+Bo-239,Howe,Doralee,"Bowling Green",OH,F,N/A,N/A,75
+Iz-245,Izzo,Brenda,"North Baltimore",OH,F,N/A,N/A,24
+Aa-561,Jamison,Mona,"Bowling Green",OH,F,N/A,N/A,19
+Ai-107,Ji,Xiang,"Bowling Green",OH,F,N/A,N/A,24
+Ce-904,Keil,Kathy,Portage,OH,F,N/A,N/A,27
+Kr-301,Krotzer,Nicole,Wayne,OH,F,N/A,N/A,85
+Li-309,Linquist,Lisa,McComb,OH,F,N/A,N/A,33
+Li-782,Lippert,Miranda,"Bowling Green",OH,F,N/A,N/A,25
+Lu-070,Lugabihl,Dorothy,"Bowling Green",OH,F,N/A,N/A,26
+Ca-522,Malucci,Lucy,Weston,OH,F,N/A,N/A,49
+Ca-822,Mahavixay,Juneda,"Grand Rapids",OH,F,N/A,N/A,68
+Ne-022,Nensel,Amelia,"Bowling Green",OH,F,N/A,N/A,35
+Ng-322,Ngandu,Abibo,"Bowling Green",OH,F,N/A,N/A,42
+Ny-727,Nyquist,Helen,Weston,OH,F,N/A,N/A,60
+Ob-236,Obermyer,Gail,"Bowling Green",OH,F,N/A,N/A,53
+Cr-132,Prezkop,Lesley,"Grand Rapids",OH,F,N/A,N/A,36
+Ba-576,Radabaugh,Angelena,Wayne,OH,F,N/A,N/A,39
+Be-892,Resnik,Joyce,Weston,OH,F,N/A,N/A,25
+Bo-283,Romick,Rody,"Bowling Green",OH,F,N/A,N/A,28
+Te-429,Tesso,Shannon,"Bowling Green",OH,F,N/A,N/A,38
+Bl-342,Blaha,Tim,"Bowling Green",OH,M,N/A,N/A,58
+Br-126,Brown,Paul,"Bowling Green",OH,M,N/A,N/A,44
+Ca-073,Cady,Jim,Wayne,OH,M,N/A,N/A,47
+De-873,DeSilvio,Mark,"Bowling Green",OH,M,N/A,N/A,18
+Dr-887,Drew,Darrell,McComb,OH,M,N/A,N/A,23
+Em-875,Emmerich,Robert,McComb,OH,M,N/A,N/A,37
+Eu-231,Euler,Donald,Weston,OH,M,N/A,N/A,23
+Fi-903,Finkhousen,Russell,Weston,OH,M,N/A,N/A,78
+Ga-833,Gajewicz,Tom,Portage,OH,M,N/A,N/A,31
+Gr-093,Grzybowski,Jerome,"Bowling Green",OH,M,N/A,N/A,59
+Gu-982,Guiterrez,Marco,"Bowling Green",OH,M,N/A,N/A,49
+Ca-252,Hayakawa,Hideo,"Grand Rapids",OH,M,N/A,N/A,42
+Ce-100,Herzig,Michael,"Grand Rapids",OH,M,N/A,N/A,46
+Bb-130,Ibarra,Jose,Weston,OH,M,N/A,N/A,34
+Br-347,Irvin,William,"Grand Rapids",OH,M,N/A,N/A,29
+Ja-182,Jablonsky,Larry,"Grand Rapids",OH,M,N/A,N/A,32
+Co-641,Jorgensen,Duane,"Bowling Green",OH,M,N/A,N/A,28
+Ce-702,Kelbaugh,Ed,"Grand Rapids",OH,M,N/A,N/A,39
+La-254,LaPorte,Jeffrey,"North Baltimore",OH,M,N/A,N/A,34
+Lu-346,Luecke,Robert,"Bowling Green",OH,M,N/A,N/A,43
+Ci-418,Miklovic,Ron,"North Baltimore",OH,M,N/A,N/A,65
+No-445,Noble,Steve,Portage,OH,M,N/A,N/A,40
+Oc-523,O'Conner,Timothy,McComb,OH,M,N/A,N/A,46
+Ol-024,Olszewski,Matt,"Grand Rapids",OH,M,N/A,N/A,58
+Oz-950,Ozan,Aydin,"Bowling Green",OH,M,N/A,N/A,44
+Ch-101,Phamakao,Brian,Weston,OH,M,N/A,N/A,24
+Ci-383,Pitts,Eugene,McComb,OH,M,N/A,N/A,29
+Qu-227,Quintero,Lance,"North Baltimore",OH,M,N/A,N/A,42
+Qu-257,Quinn,Jarus,Wayne,OH,M,N/A,N/A,73
+Sa-090,Sanati,Mohammad,"North Baltimore",OH,M,N/A,N/A,38
+Sc-151,Scaroleta,Michael,"Bowling Green",OH,M,N/A,N/A,47
+Sp-458,Spratt,Mary,Custer,OH,M,N/A,N/A,57
+Ti-066,Tianero,Matthew,"North Baltimore",OH,M,N/A,N/A,23
+Ty-872,Tyrell,Keith,"Grand Rapids",OH,M,N/A,N/A,58
+Ca-074,Cady,Jim,Wayne,MI,M,N/A,N/A,36

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Create Listings Assignment</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">
+            Customer Data Rendering Tables
+        </h1>
+    </header>
+    <main class="main-container">
+        <button class="baltimore-toggle" data-filter="baltimore">Show North Baltimore Customers</button>
+        <button class="age-toggle" data-filter="age">Show Customers Between the ages of 25 & 28</button>
+        <button class="gender-toggle" data-filter="gender">Show Customers Listed by Gender</button>
+        <!-- Baltimore table start -->
+        <section class="baltimore-container">
+            <h1>North Baltimore Customers:</h1>
+            <button class="download-csv" data-csv="north_baltimore_customers.csv">Download CSV</button>
+            <table class="baltimore-table">
+                <thead class="baltimore-head">
+                    <tr>
+                        <th class="column-header">Customer ID</th>
+                        <th class="column-header">Last Name</th>
+                        <th class="column-header">First Name</th>
+                        <th class="column-header">City</th>
+                        <th class="column-header">State</th>
+                        <th class="column-header">Gender</th>
+                        <th class="column-header">Date of Birth</th>
+                        <th class="column-header">Years</th>
+                        <th class="column-header">Age</th>
+                    </tr>
+                </thead>
+                <tbody class="baltimore-body">
+                    <!-- XML rows to be appended here -->
+                </tbody>
+            </table>
+        </section>
+        <!-- Baltimore table end -->
+        <!-- Age table start -->
+        <section class="age-container">
+            <h1>Customers Between the Ages of 25 - 28:</h1>
+            <button class="download-csv" data-csv="customers_age_25_28.csv">Download CSV</button>
+            <table class="age-table">
+                <thead class="age-head">
+                    <tr>
+                        <th class="column-header">Customer ID</th>
+                        <th class="column-header">Last Name</th>
+                        <th class="column-header">First Name</th>
+                        <th class="column-header">City</th>
+                        <th class="column-header">State</th>
+                        <th class="column-header">Gender</th>
+                        <th class="column-header">Date of Birth</th>
+                        <th class="column-header">Years</th>
+                        <th class="column-header">Age</th>
+                    </tr>
+                </thead>
+                <tbody class="age-body">
+                    <!-- XML rows to be appended here -->
+                </tbody>
+            </table>
+        </section>
+        <!-- Age table end -->
+        <!-- Gender table start -->
+        <section class="gender-container">
+            <h1>Count of Customers by Gender:</h1>
+            <button class="download-csv" data-csv="customers_by_gender.csv">Download CSV</button>
+            <table class="gender-table">
+                <thead class="gender-head">
+                    <tr>
+                        <th class="column-header">Customer ID</th>
+                        <th class="column-header">Last Name</th>
+                        <th class="column-header">First Name</th>
+                        <th class="column-header">City</th>
+                        <th class="column-header">State</th>
+                        <th class="column-header">Gender</th>
+                        <th class="column-header">Date of Birth</th>
+                        <th class="column-header">Years</th>
+                        <th class="column-header">Age</th>
+                    </tr>
+                </thead>
+                <tbody class="gender-body">
+                    <!-- XML rows to be appended here -->
+                </tbody>
+                <tfoot class="gender-footer">
+                    <tr class="gender-count">
+                        <!-- Customer count by gender listed here -->
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <!-- Gender table end -->
+    </main>
+    <footer class="footer">
+        <h3 class="footer-heading">
+            Site authored by Eric Henderson &copy; 2025
+        </h3>
+    </footer>
+    <!-- External JavaScript -->
+    <script src="frontend/main.js"></script>
+</body>
+</html>
