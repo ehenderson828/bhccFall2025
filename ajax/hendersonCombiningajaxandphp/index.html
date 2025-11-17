@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon link -->
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Combining Ajax & PHP Assignment</title>
+</head>
+<body>
+    <header class="container">
+        <section class="sub-container">
+            <h1 class="title">
+                Combining Ajax & PHP Assignment
+            </h1>
+        </section>
+    </header>
+    <main class="container">
+        <section class="sub-container">
+            <p><b>Start typing a name in the input field below:</b></p>
+            <form>
+                <!-- showHint runs as soon as keyup event is detected -->
+                First name: <input 
+                    type="text" 
+                    onkeyup="showHint(this.value)"
+                    autofocus
+                    id="input"
+                >
+            </form>
+            <!-- Name suggestions to be rendered here -->
+            <p>Suggestions: <span id="txtHint" class="hidden"></span></p>
+        </section>
+    </main>
+    <footer class="sub-container">
+        <p>
+            Page created by Eric Henderson &copy; 2025
+        </p>
+    </footer>
+    <!-- External JS import -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>
