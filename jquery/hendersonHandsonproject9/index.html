@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon import -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Hands On Project 9</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Flickr API Image Source
+        </h1>
+    </header>
+    <main>
+        <section id="user_input_container">
+            <label for="flickr_search_input" id="input_label"><h3>Query Flickr Images:</h3></label>
+            <input
+                type="text"
+                id="flickr_search_input"
+                placeholder="Type your photo search"
+            >
+            <button id="trigger" class="button">Load Images</button>
+            <button id="reset" class="button">Reset</button>
+            <footer id="site_footer">
+                Site created by Eric Henderson &copy; 2025
+            </footer>
+        </section>
+        <section id="api_results_container">
+            <h3 id="results_heading">
+                Results:
+            </h3>
+            <section id="image_output_container">
+                <!-- Images appended here -->
+            </section>
+        </section>
+    </main>
+    <!-- External JS import -->
+    <script src="scripts/main.js" type="text/javascript"></script>
+</body>
+</html>
