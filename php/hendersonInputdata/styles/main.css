@@ -1,0 +1,399 @@
+/* Style reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Modernist color pallet */
+:root {
+    --bauhaus-red: #E71D36;
+    --bauhaus-yellow: #FFD700;
+    --bauhaus-blue: #0051BA;
+    --bauhaus-black: #000000;
+    --bauhaus-white: #FFFFFF;
+    --bauhaus-gray: #F5F5F5;
+    --bauhaus-orange: #FF6B35;
+}
+
+body {
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    background-color: var(--bauhaus-gray);
+    color: var(--bauhaus-black);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: var(--bauhaus-black);
+    padding: 2rem 0;
+    border-bottom: 8px solid var(--bauhaus-red);
+    position: relative;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 30%;
+    height: 8px;
+    background-color: var(--bauhaus-yellow);
+}
+
+.title {
+    text-align: center;
+    color: var(--bauhaus-white);
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+.container {
+    flex: 1;
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 3rem;
+    background-color: var(--bauhaus-white);
+    border: 6px solid var(--bauhaus-black);
+    position: relative;
+    box-shadow: 12px 12px 0 var(--bauhaus-blue);
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--bauhaus-yellow);
+    border: 4px solid var(--bauhaus-black);
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.content {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    border-left: 6px solid var(--bauhaus-blue);
+    line-height: 1.8;
+}
+
+form {
+    margin: 2rem 0;
+}
+
+button[type="submit"] {
+    background-color: var(--bauhaus-red);
+    color: var(--bauhaus-white);
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.25rem 2.5rem;
+    border: 4px solid var(--bauhaus-black);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    box-shadow: 6px 6px 0 var(--bauhaus-black);
+}
+
+button[type="submit"]:hover {
+    background-color: var(--bauhaus-black);
+    transform: translate(3px, 3px);
+    box-shadow: 3px 3px 0 var(--bauhaus-black);
+}
+
+button[type="submit"]:active {
+    transform: translate(6px, 6px);
+    box-shadow: 0 0 0 var(--bauhaus-black);
+}
+
+.message {
+    margin-top: 2rem;
+    padding: 1.25rem 1.5rem;
+    font-weight: 600;
+    border: 4px solid var(--bauhaus-black);
+    position: relative;
+    letter-spacing: 0.5px;
+}
+
+.message::before {
+    content: '';
+    position: absolute;
+    left: -4px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 60%;
+    border: 4px solid var(--bauhaus-black);
+}
+
+.message-success {
+    background-color: var(--bauhaus-yellow);
+    color: var(--bauhaus-black);
+    border-left: 12px solid var(--bauhaus-blue);
+}
+
+.message-success::before {
+    background-color: var(--bauhaus-blue);
+}
+
+.message-error {
+    background-color: var(--bauhaus-white);
+    color: var(--bauhaus-black);
+    border-left: 12px solid var(--bauhaus-red);
+}
+
+.message-error::before {
+    background-color: var(--bauhaus-red);
+}
+
+.message-info {
+    background-color: var(--bauhaus-blue);
+    color: var(--bauhaus-white);
+    border-left: 12px solid var(--bauhaus-yellow);
+}
+
+.message-info::before {
+    background-color: var(--bauhaus-yellow);
+}
+
+.message-warning {
+    background-color: var(--bauhaus-orange);
+    color: var(--bauhaus-white);
+    border-left: 12px solid var(--bauhaus-yellow);
+}
+
+.message-warning::before {
+    background-color: var(--bauhaus-yellow);
+}
+
+.data-summary {
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: var(--bauhaus-gray);
+    border: 4px solid var(--bauhaus-black);
+    border-left: 12px solid var(--bauhaus-yellow);
+    position: relative;
+}
+
+.summary-title {
+    font-size: 1.75rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    color: var(--bauhaus-black);
+}
+
+.row-count {
+    font-size: 1.125rem;
+    color: var(--bauhaus-black);
+}
+
+.row-count strong {
+    color: var(--bauhaus-red);
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.records-container {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: var(--bauhaus-white);
+    border: 6px solid var(--bauhaus-black);
+    position: relative;
+    overflow-x: auto;
+}
+
+.records-title {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    color: var(--bauhaus-black);
+    padding-bottom: 0.5rem;
+    border-bottom: 4px solid var(--bauhaus-red);
+}
+
+.records-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 4px solid var(--bauhaus-black);
+}
+
+.records-table thead {
+    background-color: var(--bauhaus-black);
+}
+
+.records-table thead th {
+    padding: 1rem;
+    text-align: left;
+    color: var(--bauhaus-white);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.875rem;
+    border-right: 2px solid var(--bauhaus-white);
+}
+
+.records-table thead th:last-child {
+    border-right: none;
+}
+
+.records-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.records-table tbody tr:nth-child(odd) {
+    background-color: var(--bauhaus-white);
+}
+
+.records-table tbody tr:nth-child(even) {
+    background-color: var(--bauhaus-gray);
+}
+
+.records-table tbody tr:hover {
+    background-color: var(--bauhaus-yellow);
+}
+
+.records-table tbody td {
+    padding: 1rem;
+    border-right: 2px solid var(--bauhaus-black);
+    border-bottom: 2px solid var(--bauhaus-black);
+    font-weight: 500;
+}
+
+.records-table tbody td:last-child {
+    border-right: none;
+}
+
+.records-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.footer {
+    background-color: var(--bauhaus-black);
+    padding: 1.5rem 0;
+    border-top: 4px solid var(--bauhaus-yellow);
+    margin-top: auto;
+}
+
+.signature {
+    text-align: center;
+    color: var(--bauhaus-white);
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+/* Media Query, medium screens: */
+@media (max-width: 768px) {
+    .container {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+        box-shadow: 8px 8px 0 var(--bauhaus-blue);
+        max-width: calc(100% - 2rem);
+    }
+
+    .container::before {
+        width: 40px;
+        height: 40px;
+        top: -20px;
+        right: 20px;
+    }
+
+    .title {
+        font-size: 1.75rem;
+        letter-spacing: 2px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+
+    .content {
+        font-size: 1rem;
+    }
+
+    .records-table {
+        font-size: 0.875rem;
+        min-width: 600px;
+    }
+
+    .records-table thead th,
+    .records-table tbody td {
+        padding: 0.75rem 0.5rem;
+    }
+
+    .summary-title {
+        font-size: 1.5rem;
+    }
+
+    .records-title {
+        font-size: 1.25rem;
+    }
+
+    .records-container {
+        padding: 1rem;
+    }
+
+    .data-summary {
+        padding: 1rem;
+    }
+}
+
+/* Media query, small screens */
+@media (max-width: 480px) {
+    .header::after {
+        width: 50%;
+    }
+
+    .container {
+        margin: 1rem 0.5rem;
+        padding: 1rem;
+        border-width: 4px;
+        box-shadow: 6px 6px 0 var(--bauhaus-blue);
+        max-width: calc(100% - 1rem);
+    }
+
+    .message {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .records-table {
+        font-size: 0.7rem;
+        min-width: 500px;
+    }
+
+    .records-table thead th,
+    .records-table tbody td {
+        padding: 0.5rem 0.25rem;
+    }
+
+    .data-summary,
+    .records-container {
+        padding: 0.75rem;
+    }
+
+    .summary-title {
+        font-size: 1.25rem;
+    }
+
+    .records-title {
+        font-size: 1rem;
+    }
+}
