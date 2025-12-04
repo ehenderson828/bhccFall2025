@@ -1,0 +1,18 @@
+<!--
+   Customer List DTD
+
+   Filename:         customers.dtd
+   Supporting Files: orders.xml
+-->
+
+<!ELEMENT customers (customer)*>
+
+<!ELEMENT customer (order)>
+<!ATTLIST customer id CDATA #IMPLIED>
+
+<!ELEMENT order (qty, date, amount)>
+<!ATTLIST order orderid CDATA #IMPLIED>
+
+<!ELEMENT qty (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT amount (#PCDATA)>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+         Author: Eric Henderson
+         Date: 12/1/25
+      -->
+<!DOCTYPE customers
+  SYSTEM "customers.dtd">
+<customers>
+   <customer id="CUST083">
+      <order orderid="OR3130">
+         <qty>2</qty>
+         <date>5/3/2017</date>
+         <amount>$58.93</amount>
+      </order>
+   </customer>
+   <customer id="CUST091">
+      <order orderid="OR3127">
+         <qty>4</qty>
+         <date>5/2/2017</date>
+         <amount>$68.21</amount>
+      </order>
+   </customer>
+   <customer id="CUST117">
+      <order orderid="OR3125">
+         <qty>2</qty>
+         <date>5/1/2017</date>
+         <amount>$78.21</amount>
+      </order>
+   </customer>
+   <customer id="CUST128">
+      <order orderid="OR3129">
+         <qty>1</qty>
+         <date>5/3/2017</date>
+         <amount>$75.68</amount>
+      </order>
+   </customer>
+   <customer id="CUST137">
+      <order orderid="OR3128">
+         <qty>1</qty>
+         <date>5/2/2017</date>
+         <amount>$117.24</amount>
+      </order>
+   </customer>
+   <customer id="CUST204">
+      <order orderid="OR3124">
+         <qty>1</qty>
+         <date>5/1/2017</date>
+         <amount>$108.24</amount>
+      </order>
+   </customer>
+   <customer id="CUST304">
+      <order orderid="OR3131">
+         <qty>1</qty>
+         <date>5/3/2017</date>
+         <amount>$112.25</amount>
+      </order>
+   </customer>
+   <customer id="CUST311">
+      <order orderid="OR3126">
+         <qty>1</qty>
+         <date>5/1/2017</date>
+         <amount>$45.93</amount>
+      </order>
+   </customer>
+</customers>

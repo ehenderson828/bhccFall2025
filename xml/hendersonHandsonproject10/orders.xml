@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+   Order List
+   Author: Eric Henderson
+   Date: 12/1/25
+
+   Filename:         orders.xml
+   Supporting Files: clist.xsl
+
+-->
+
+<?xml-stylesheet type="text/xsl" href="clist.xsl"?>
+
+<orders>
+   <order id="OR3124" qty="1" custid="CUST204">
+      <date>5/1/2017</date>
+      <amount>$108.24</amount>
+   </order>
+   <order id="OR3125" qty="2" custid="CUST117">
+      <date>5/1/2017</date>
+      <amount>$78.21</amount>
+   </order>
+   <order id="OR3126" qty="1" custid="CUST311">
+      <date>5/1/2017</date>
+      <amount>$45.93</amount>
+   </order>
+   <order id="OR3127" qty="4" custid="CUST091">
+      <date>5/2/2017</date>
+      <amount>$68.21</amount>
+   </order>
+   <order id="OR3128" qty="1" custid="CUST137">
+      <date>5/2/2017</date>
+      <amount>$117.24</amount>
+   </order>
+   <order id="OR3129" qty="1" custid="CUST128">
+      <date>5/3/2017</date>
+      <amount>$75.68</amount>
+   </order>
+   <order id="OR3130" qty="2" custid="CUST083">
+      <date>5/3/2017</date>
+      <amount>$58.93</amount>
+   </order>
+   <order id="OR3131" qty="1" custid="CUST304">
+      <date>5/3/2017</date>
+      <amount>$112.25</amount>
+   </order>
+</orders>
