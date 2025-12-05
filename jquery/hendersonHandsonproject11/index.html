@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <!-- jQuery Ajax CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>jQuery: Hands On Project 11</title>
+    <style>
+        body { 
+          font-family: Arial, sans-serif; 
+          margin: 20px; 
+        }
+        main {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        button { 
+          margin: 5px; 
+          padding: 10px; 
+        }
+        #output { 
+          margin-top: 20px; 
+          padding: 15px; 
+          border: 1px solid #ccc; 
+          background-color: #F0F8FF;
+          min-height: 100px; 
+        }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="container">
+        <h2>Using jQuery AJAX to load external file</h2>
+      </div>
+      <section id="button-section">
+        <button id="loadText">Load Text File</button>
+        <button id="loadHtml">Load HTML File</button>
+        <button id="loadXml">Load XML File</button>
+      </section>
+      <div id="output">
+        Content will appear here...
+      </div>
+    </main>
+    <!-- External JS -->
+    <script src="frontend/main.js"></script>
+  </body>
+</html>

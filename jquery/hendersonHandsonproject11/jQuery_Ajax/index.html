@@ -1,0 +1,41 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+  // Load Text
+  $("#loadText").click(function() {
+    $.ajax({
+      url: "content.txt",
+      success: function(data) {
+        $("#output").text(data);
+      }
+    });
+  });
+
+  // Load HTML
+  $("#loadHtml").click(function() {
+    $("#output").load("test.html");
+  });
+
+  // Load XML
+  $("#loadXml").click(function() {
+   $("#output").load("portfolio.xml");
+    
+  });
+});
+
+</script>
+
+</head>
+<body>
+<div id="container"><h2>Using jQuery AJAX to load external file</h2></div>
+  <button id="loadText">Load Text File</button>
+  <button id="loadHtml">Load HTML File</button>
+  <button id="loadXml">Load XML File</button>
+   <div id="output">Content will appear here...</div>
+
+
+
+</body>
+</html>
